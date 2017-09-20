@@ -1,6 +1,6 @@
-footer,div,nav{text-align: center}
+footer,div,nav,a{text-align: center}
 @font-face { font-family: OptimusPrinceps; src: url('OptimusPrinceps.ttf'); } 
 h1 { font-family: OptimusPrinceps, sans-serif;font-size: 10vw;-webkit-text-stroke: 1px yellow;-webkit-text-fill-color: black}
 body{background-image: url('background.png')}
-footer{-webkit-text-stroke: .5px yellow;-webkit-text-fill-color: black}
+footer{-webkit-text-fill-color: black}
 a:hover{color: yellow}
