@@ -4,3 +4,9 @@ h1 { font-family: OptimusPrinceps, sans-serif;font-size: 10vw;-webkit-text-strok
 body{background-image: url('background.png')}
 footer{-webkit-text-fill-color: black}
 a:hover{color: yellow}
+.slid{width: 100px;height: 350px}
+.navbar{
+    display: inline-block;
+    float: none;
+    text-align: center
+}
