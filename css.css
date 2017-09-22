@@ -1,4 +1,4 @@
-footer,div,nav,a{text-align: center}
+footer,div,nav{text-align: center}
 @font-face { font-family: OptimusPrinceps; src: url('OptimusPrinceps.ttf'); } 
 h1 { font-family: OptimusPrinceps, sans-serif;font-size: 10vw;-webkit-text-stroke: 1px yellow;-webkit-text-fill-color: black}
 body{background-image: url('background.png')}
@@ -8,5 +8,8 @@ a:hover{color: yellow}
 .navbar{
     display: inline-block;
     float: none;
-    text-align: center
+    text-align: center;
+}
+.activo{
+    border: solid black; border-radius: 15px; color: gold
 }
