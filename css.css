@@ -13,3 +13,19 @@ a:hover{color: yellow}
 .activo{
     border: solid black; border-radius: 15px; color: gold
 }
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #overlay{z-index: 10}
+ 
+  #overlay {
+    height:0px;
+    overflow:visible;
+    pointer-events:none;
+    background:none !important;
+}
