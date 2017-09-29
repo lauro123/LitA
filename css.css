@@ -1,7 +1,7 @@
 footer,div,nav{text-align: center}
 @font-face { font-family: OptimusPrinceps; src: url('OptimusPrinceps.ttf'); } 
 h1 { font-family: OptimusPrinceps, sans-serif;font-size: 10vw;-webkit-text-stroke: 1px yellow;-webkit-text-fill-color: black}
-h4{ font-family: OptimusPrinceps, sans-serif;-webkit-text-fill-color: black}
+h4,label{ font-family: OptimusPrinceps, sans-serif;-webkit-text-fill-color: black}
 body{background-image: url('background.png')}
 footer{-webkit-text-fill-color: black}
 a:hover{color: yellow}
@@ -31,3 +31,7 @@ a:hover{color: yellow}
     background:none !important;
 }
 .card{display:inline-flex;vertical-align: top}
+
+#honeypot {
+    display: none; /*makes the field not visible to humans*/
+  }
