@@ -26,14 +26,14 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="toggle_div_1">
-				<a ng-model="home" class="nav-link activo" href="index.html">{{home}}</a>
-				<a class="nav-link" href="info.html">More Information</a>
-				<a class="nav-link" href="gallery.html">Gallery</a>
-				<a class="nav-link" href="contact.html">Contact</a>
+				<a class="nav-link activo" href="index.html">{{home}}</a>
+				<a class="nav-link" href="info.html">{{info}}</a>
+				<a class="nav-link" href="gallery.html">{{gallery}}</a>
+				<a class="nav-link" href="contact.html">{{contact}}</a>
 				<div class="dropdown">
 					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
 					    aria-expanded="false">
-						Social
+						{{social}}
 					</button>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 						<a class="dropdown-item" href="#">Facebook</a>
@@ -41,7 +41,7 @@
 						<a class="dropdown-item" href="#">Youtube</a>
 					</div>
 				</div>
-				<a class="nav-link" href="http://store.steampowered.com/?l=spanish" target="blank">Buy Now
+				<a class="nav-link" href="http://store.steampowered.com/?l=spanish" target="blank">{{buy}}
 					<img src="steam.png" alt="" width="30" height="30" alt="">
 				</a>
 
@@ -56,7 +56,7 @@
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZamjxJp59II?rel=0&amp;showinfo=0;autoplay=1" allowfullscreen></iframe>
 					</div>
 					<div id="overlay">
-						Old Trailer. New soon
+						{{trailer}}
 					</div>
 				</div>
 
@@ -65,7 +65,7 @@
 		</div>
 	</div>
 	<footer>
-		Lost in the Abysm. 2017. Available soon on Steam
+		Lost in the Abysm. 2017. {{available}}
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	    crossorigin="anonymous"></script>
@@ -73,7 +73,7 @@
 	    crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
 	    crossorigin="anonymous"></script>
-	
+
 
 </body>
 

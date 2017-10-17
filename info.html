@@ -9,9 +9,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
 	    crossorigin="anonymous">
 	<link rel="stylesheet" href="css.css">
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="localization.js"></script>
 </head>
 
-<body>
+<body ng-app="index" ng-controller="indexController">
 	<div class="container">
 		<div>
 			<h1 id="banner">Lost in the Abysm</h1>
@@ -21,25 +23,27 @@
 
 			<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#toggle_div_1" aria-controls="toggle"
 			    aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="toggle_div_1">
-				<a class="nav-link" href="index.html">Home</a>
-				<a class="nav-link activo" href="info.html">More Information</a>
-				<a class="nav-link" href="gallery.html">Gallery</a>
-				<a class="nav-link" href="contact.html">Contact</a>
+				<a class="nav-link " href="index.html">{{home}}</a>
+				<a class="nav-link activo" href="info.html">{{info}}</a>
+				<a class="nav-link" href="gallery.html">{{gallery}}</a>
+				<a class="nav-link" href="contact.html">{{contact}}</a>
 				<div class="dropdown">
 					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
 					    aria-expanded="false">
-							  Social
-							</button>
+						{{social}}
+					</button>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 						<a class="dropdown-item" href="#">Facebook</a>
 						<a class="dropdown-item" href="#">Twitter</a>
 						<a class="dropdown-item" href="#">Youtube</a>
 					</div>
 				</div>
-				<a class="nav-link" href="http://store.steampowered.com/?l=spanish" target="blank">Buy Now  <img src="steam.png" alt="" width="30" height="30" alt=""></a>
+				<a class="nav-link" href="http://store.steampowered.com/?l=spanish" target="blank">{{buy}}
+					<img src="steam.png" alt="" width="30" height="30" alt="">
+				</a>
 
 			</div>
 		</nav>
@@ -50,18 +54,18 @@
 				<div id="contenedor">
 					<div class="card" style="width: 20rem;">
 						<div class="card-header">
-							<h4 class="card-title">What is Lost in the Abysm?</h4>
+							<h4 class="card-title">{{information1}}</h4>
 						</div>
 						<div class="card-body">
-							<p class="card-text">Lost in the Abysm is a 3rd person RPG focused on range combat</p>
+							<p class="card-text">{{information11}}</p>
 						</div>
 					</div>
 					<div class="card" style="width: 20rem;">
 						<div class="card-header">
-							<h4 class="card-title">What are the characters?</h4>
+							<h4 class="card-title">{{information2}}</h4>
 						</div>
 						<div class="card-body">
-							<p class="card-text">They are gemoids</p>
+							<p class="card-text">{{information22}}</p>
 						</div>
 					</div>
 				</div>
@@ -71,7 +75,7 @@
 		</div>
 	</div>
 	<footer>
-		Lost in the Abysm. 2017. Available soon on Steam
+		Lost in the Abysm. 2017. {{available}}
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
