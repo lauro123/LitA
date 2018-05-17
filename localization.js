@@ -2,9 +2,8 @@ var userLang = navigator.language || navigator.userLanguage;
 console.log(userLang);
 var indexAPP = angular.module('index', []);
 indexAPP.controller('indexController', function ($scope) {
-    if(userLang == "es")
+    if(userLang.includes("es"))
     {
-        console.log("a");
         $scope.home = "Inicio";
         $scope.info ="Mas Información";
         $scope.gallery = "Galería";
