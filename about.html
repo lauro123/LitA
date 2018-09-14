@@ -47,42 +47,37 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item px-lg-4">
+            <li class="nav-item active px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="about.html">{{info}}</a>
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="gallery.html">{{gallery}}</a>
             </li>
-            <li class="nav-item active px-lg-4">
+            <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="contact.html">{{contact}}</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="page-section cta">
+
+    <section class="page-section about-heading">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto" style="text-align: center;vertical-align: middle">
-              <form method="post" data-email="laurocaccia@gmail.com" id="gform" action="https://script.google.com/macros/s/AKfycbyLNo9FOT6T0gmnljemq-__zbMc1nMndIAmvA7ETHyooveJ6rQ/exec">
-                <label for="nombre">{{name}}</label>
-                <input type="text" autocomplete="on" class="form-control" id="nombre" name="Name" placeholder={{enter_name}} required>
-                <label for="correo">{{mail}}</label>
-                <input type="email" autocomplete="on" class="form-control" id="correo" name="Email" placeholder={{enter_mail}} required>
-                <label for="mensaje">{{message}}</label>
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="./img/captura1.png" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                <span class="section-heading-lower">About Lost in the Abysm</span>
+                </h2>
+                <p><em>{{information1}}</em></p>
+                <p>{{information11}}</p>
+                <p><em>{{information2}}</em></p>
+                <p>{{information22}}</p>
                 
-                <textarea  class="form-control" autocomplete="off" rows="4" id="mensaje" name="Message" placeholder={{enter_message}}
-                    required></textarea>
-                  
-                <label class="sr-only">Keep this field blank</label>
-                <input id="honeypot" type="text" name="honeypot" value="" />
-                <br>
-                <button type="submit" class="btn btn-primary" >{{send}}</button>
-              </form>
-              <div id="thankyou_message"class="cta-inner text-center rounded" style="display: none">
-                <h4>{{message_sent}}</h4>            
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -99,12 +94,5 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
-
-  <!-- Script to highlight the active date in the hours list -->
-
-	<script type="text/javascript" src="after-submit.js"></script>
-  <script>
-    $('.list-hours li').eq(new Date().getDay()).addClass('today');
-  </script>
 
 </html>

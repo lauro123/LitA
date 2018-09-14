@@ -1,104 +1,183 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Lost in the Abysm, RPG Videogame">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Lost in the Abysm, RPG Videogame">
   <meta name="keywords" content="Videogame,Steam">
-	<title>Lost in the Abysm</title>
-	<link rel="shortcut icon" href="icono.png" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-	    crossorigin="anonymous">
-	<link rel="stylesheet" href="css.css">
-	<script type="text/javascript" src="angular.js"></script>
-	<script type="text/javascript" src="localization.js"></script>
-</head>
+  <link rel="shortcut icon" href="icono.png" />
 
-<body ng-app="index" ng-controller="indexController">
-	<div class="container">
-		<div>
-			<h1 id="banner">Lost in the Abysm</h1>
-		</div>
+    <title>Lost in the Abysm</title>
 
-		<nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-			<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#toggle_div_1" aria-controls="toggle"
-			    aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="toggle_div_1">
-				<a class="nav-link" href="index.html">{{home}}</a>
-				<a class="nav-link" href="info.html">{{info}}</a>
-				<a class="nav-link activo" href="gallery.html">{{gallery}}</a>
-				<a class="nav-link" href="contact.html">{{contact}}</a>
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-					    aria-expanded="false">
-						{{social}}
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Facebook</a>
-						<a class="dropdown-item" href="#">Twitter</a>
-						<a class="dropdown-item" href="#">Youtube</a>
-					</div>
-				</div>
-				<a class="nav-link" href="http://store.steampowered.com/?l=spanish" target="blank">{{buy}}
-					<img src="steam.png" alt="" width="30" height="30" alt="">
-				</a>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
-			</div>
-		</nav>
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/business-casual.css">
+    <script src="angular.js"></script>
+    <script src="localization.js"></script>
+  </head>
 
-		<div class="row">
-			<div class="col"></div>
-			<div class="col-8">
-				<div>
-					<div>
-						<div id="carousel-slides" data-interval="false" class="carousel slide" data-ride="carousel" style="border:solid black">
-							<ol class="carousel-indicators">
-								<li data-target="#carousel-slides" data-slide-to="0" class="active"></li>
-								<li data-target="#carousel-slides" data-slide-to="2"></li>
-							</ol>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img class="d-block img-fluid w-100 h-100 slid" src="captura1.png" alt="First slide">
-								</div>
-								<div class="carousel-item">
-									<div id="vid" class="embed-responsive embed-responsive-16by9">
-										<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/xXmnvEv4GMk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-									</div>
-								</div>
-							</div>
-							<a class="carousel-control-prev" href="#carousel-slides" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#carousel-slides" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-							</a>
+  <body ng-app="index" ng-controller="indexController">
 
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">A 3D rpg game</span>
+      <span class="site-heading-lower">Lost in the Abysm</span>
+    </h1>
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">{{home}}
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">{{info}}</a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="gallery.html">{{gallery}}</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="contact.html">{{contact}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- nexus -->
+<!--
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex mr-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">In Engine Screenshot</span>
+                <span class="section-heading-lower">Nexus in the Abysm</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-02.jpg" alt="">
+          <div class="product-item-description d-flex ml-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">The nexus is a safe place to rest</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
+<!-- lumoj -->
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex ml-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">In Engine Screenshot</span>
+                <span class="section-heading-lower">Lumoj, old version</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/captura1.png" alt="">
+          <div class="product-item-description d-flex mr-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">Lumoj is the ice land, guarded by Aurur, the Abysmal Baron</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- miral -->
+<!--
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex mr-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">In Engine Screenshot</span>
+                <span class="section-heading-lower">Miral</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-02.jpg" alt="">
+          <div class="product-item-description d-flex ml-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">Miral is the fire land, guarded by the Twin Earls Raoda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- amoaan 
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex ml-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">In Engine Screenshot</span>
+                <span class="section-heading-lower">Amoaan</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-03.jpg" alt="">
+          <div class="product-item-description d-flex mr-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">Amoaan is the air land, guarded by the Marquis Orrania</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- lionir 
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex mr-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">In Engine Screenshot</span>
+                <span class="section-heading-lower">Lionir</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-02.jpg" alt="">
+          <div class="product-item-description d-flex ml-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">Lionir is the air earth, guarded by the Archduke Yealia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Lost in the Abysm</p>
+      </div>
+    </footer>
 
-						</div>
-					</div>
-				</div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-			</div>
-			<div class="col"></div>
-		</div>
-	</div>
-	<footer>
-		Lost in the Abysm. 2018. {{available}}
-	</footer>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	    crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-	    crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-	    crossorigin="anonymous"></script>
-</body>
+  </body>
 
 </html>

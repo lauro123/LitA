@@ -1,82 +1,96 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Lost in the Abysm, RPG Videogame">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Lost in the Abysm, RPG Videogame">
   <meta name="keywords" content="Videogame,Steam">
-	<title>Lost in the Abysm</title>
-	<link rel="shortcut icon" href="icono.png" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-	    crossorigin="anonymous">
-	<link rel="stylesheet" href="css.css">
-	<script type="text/javascript" src="angular.js"></script>
-	<script type="text/javascript" src="localization.js"></script>
-</head>
+  <link rel="shortcut icon" href="icono.png" />
 
-<body ng-app="index" ng-controller="indexController">
-	<div class="container">
-		<div>
-			<h1 id="banner">Lost in the Abysm</h1>
-		</div>
+    <title>Lost in the Abysm</title>
 
-		<nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-			<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#toggle_div_1" aria-controls="toggle"
-			    aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="toggle_div_1">
-				<a class="nav-link activo" href="index.html">{{home}}</a>
-				<a class="nav-link" href="info.html">{{info}}</a>
-				<a class="nav-link" href="gallery.html">{{gallery}}</a>
-				<a class="nav-link" href="contact.html">{{contact}}</a>
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-					    aria-expanded="false">
-						{{social}}
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Facebook</a>
-						<a class="dropdown-item" href="#">Twitter</a>
-						<a class="dropdown-item" href="#">Youtube</a>
-					</div>
-				</div>
-				<a class="nav-link" href="http://store.steampowered.com/?l=spanish" target="blank">{{buy}}
-					<img src="steam.png" alt="" width="30" height="30" alt="">
-				</a>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
-			</div>
-		</nav>
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/business-casual.css">
+    <script src="angular.js"></script>
+    <script src="localization.js"></script>
 
-		<div class="row">
-			<div class="col"></div>
-			<div class="col-8">
-				<div id="contenedor">
-					<div id="vid" class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/xXmnvEv4GMk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
-					<div id="overlay">
-						{{trailer}}
-					</div>
-				</div>
+  </head>
 
-			</div>
-			<div class="col"></div>
-		</div>
-	</div>
-	<footer>
-		Lost in the Abysm. 2018. {{available}}
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	    crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-	    crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-	    crossorigin="anonymous"></script>
+  <body ng-app="index" ng-controller="indexController">
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">A 3D rpg game</span>
+      <span class="site-heading-lower">Lost in the Abysm</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">{{home}}
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">{{info}}</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="gallery.html">{{gallery}}</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="contact.html">{{contact}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section clearfix">
+      <div class="container">
+        <div class="intro">
+          <iframe class="embed-responsive-item intro-img mb-3 mb-lg-0 rounded" width="708" height="400" src="https://www.youtube.com/embed/xXmnvEv4GMk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">3D rpg game</span>
+              <span class="section-heading-lower">Worth Playing</span>
+            </h2>
+            <p class="mb-3">3D rpg game focused on distance combat. Watch the gameplay trailer!
+            </p>
+            <div class="intro-button mx-auto">
+              <a class="btn btn-primary btn-xl" href="#">Buy It Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-</body>
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Lost in the Abysm</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
 
 </html>

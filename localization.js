@@ -5,7 +5,7 @@ indexAPP.controller('indexController', function ($scope) {
     if(userLang.includes("es"))
     {
         $scope.home = "Inicio";
-        $scope.info ="Mas Información";
+        $scope.info ="Información";
         $scope.gallery = "Galería";
         $scope.contact ="Contacto";
         $scope.social ="Redes Sociales";
@@ -28,7 +28,7 @@ indexAPP.controller('indexController', function ($scope) {
     else
     {
         $scope.home = "Home";
-        $scope.info = "More Information";
+        $scope.info = "About";
         $scope.gallery="Gallery";
         $scope.contact="Contact";
         $scope.social="Social";
