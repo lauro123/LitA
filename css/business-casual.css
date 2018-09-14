@@ -122,8 +122,10 @@ p {
 @media (min-width: 992px) {
   .intro .intro-img {
     width: 75%;
+  height: 400px;
     float: right;
   }
+
   .intro .intro-text {
     left: 0;
     width: 60%;
@@ -143,6 +145,8 @@ p {
     width: 45%;
   }
 }
+
+
 
 .cta {
   padding-top: 5rem;
