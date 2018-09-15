@@ -10,7 +10,7 @@ indexAPP.controller('indexController', function ($scope) {
         $scope.contact ="Contacto";
         $scope.social ="Redes Sociales";
         $scope.buy="Compralo Ahora!";
-        $scope.trailer="Trailer viejo. Nuevo pronto";
+        
         $scope.available="Disponible pronto en Steam";
         $scope.information1="Que es Lost in the Abysm?";
         $scope.information11 ="Lost in the Abysm RPG en tercera persona enfocado en el combate a distancia";
@@ -40,7 +40,7 @@ indexAPP.controller('indexController', function ($scope) {
         $scope.contact="Contact";
         $scope.social="Social";
         $scope.buy="Buy It Now!"
-        $scope.trailer="Old Trailer. New Soon";
+        
         $scope.available="Available soon on Steam";
         $scope.information1="What is Lost in the Abysm?";
         $scope.information11 ="Lost in the Abysm is a 3rd person RPG focused on range combat";
