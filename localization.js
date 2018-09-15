@@ -9,7 +9,7 @@ indexAPP.controller('indexController', function ($scope) {
         $scope.gallery = "Galería";
         $scope.contact ="Contacto";
         $scope.social ="Redes Sociales";
-        $scope.buy="Comprar Ahora";
+        $scope.buy="Compralo Ahora!";
         $scope.trailer="Trailer viejo. Nuevo pronto";
         $scope.available="Disponible pronto en Steam";
         $scope.information1="Que es Lost in the Abysm?";
@@ -24,6 +24,13 @@ indexAPP.controller('indexController', function ($scope) {
         $scope.enter_message="Ingrese su mensaje";
         $scope.enter_mail="Ingrese su E-Mail";
         $scope.enter_name="Ingrese su nombre";
+        $scope.Copyright = "Derechos reservados"
+        $scope.engine ="Captura en motor";
+        $scope.lumoj ="Lumoj es la isla de hielo, cuidada por Aurur, el Baron Abismal";
+        $scope.rpg ="Juego 3D rpg";
+        $scope.trailer="Juego 3D rpg enfocado en el combate a distancia. Mira el trailer de juego!";
+        $scope.worth ="Vale la pena jugarlo";
+        $scope.About="Sobre";
     }
     else
     {
@@ -32,7 +39,7 @@ indexAPP.controller('indexController', function ($scope) {
         $scope.gallery="Gallery";
         $scope.contact="Contact";
         $scope.social="Social";
-        $scope.buy="Buy"
+        $scope.buy="Buy It Now!"
         $scope.trailer="Old Trailer. New Soon";
         $scope.available="Available soon on Steam";
         $scope.information1="What is Lost in the Abysm?";
@@ -47,5 +54,12 @@ indexAPP.controller('indexController', function ($scope) {
         $scope.enter_message="Enter your message";
         $scope.enter_mail="Enter your E-Mail";
         $scope.enter_name="Enter your name";
+        $scope.Copyright ="Copyright";
+        $scope.engine ="In Engine Screenshot";
+        $scope.lumoj ="Lumoj is the ice land, guarded by Aurur, the Abysmal Baron";
+        $scope.rpg ="3D rpg game";
+        $scope.trailer ="3D rpg game focused on distance combat. Watch the gameplay trailer!";
+        $scope.worth="WORTH PLAYING";
+        $scope.About="About";
     }
 });

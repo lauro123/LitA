@@ -29,7 +29,7 @@
   <body ng-app="index" ng-controller="indexController">
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">A 3D rpg game</span>
+      
       <span class="site-heading-lower">Lost in the Abysm</span>
     </h1>
 
@@ -69,7 +69,7 @@
             <div class="col-xl-9 col-lg-10 mx-auto">
               <div class="bg-faded rounded p-5">
                 <h2 class="section-heading mb-4">
-                <span class="section-heading-lower">About Lost in the Abysm</span>
+                <span class="section-heading-lower">{{About}} Lost in the Abysm</span>
                 </h2>
                 <p><em>{{information1}}</em></p>
                 <p>{{information11}}</p>
@@ -85,7 +85,7 @@
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-        <p class="m-0 small">Copyright &copy; Lost in the Abysm</p>
+        <p class="m-0 small">{{Copyright}} &copy; Lost in the Abysm</p>
       </div>
     </footer>
 

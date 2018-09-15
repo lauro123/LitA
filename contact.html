@@ -29,7 +29,7 @@
   <body ng-app="index" ng-controller="indexController">
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">A 3D rpg game</span>
+      
       <span class="site-heading-lower">Lost in the Abysm</span>
     </h1>
 
@@ -90,7 +90,7 @@
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-        <p class="m-0 small">Copyright &copy; Lost in the Abysm</p>
+        <p class="m-0 small">{{Copyright}} &copy; Lost in the Abysm</p>
       </div>
     </footer>
 
@@ -103,8 +103,6 @@
   <!-- Script to highlight the active date in the hours list -->
 
 	<script type="text/javascript" src="after-submit.js"></script>
-  <script>
-    $('.list-hours li').eq(new Date().getDay()).addClass('today');
-  </script>
+
 
 </html>

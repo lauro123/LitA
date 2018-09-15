@@ -29,7 +29,7 @@
   <body ng-app="index" ng-controller="indexController">
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">A 3D rpg game</span>
+      
       <span class="site-heading-lower">Lost in the Abysm</span>
     </h1>
 
@@ -67,13 +67,13 @@
           <iframe class="img-fluid intro-img mb-3 mb-lg-0 rounded" width="708" height="400" src="https://www.youtube.com/embed/xXmnvEv4GMk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
             <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">3D rpg game</span>
-              <span class="section-heading-lower">Worth Playing</span>
+              <span class="section-heading-upper">{{rpg}}</span>
+              <span class="section-heading-lower">{{worth}}</span>
             </h2>
-            <p class="mb-3">3D rpg game focused on distance combat. Watch the gameplay trailer!
+            <p class="mb-3">{{trailer}}
             </p>
             <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="#">Buy It Now!</a>
+              <a class="btn btn-primary btn-xl" href="#">{{buy}}</a>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-        <p class="m-0 small">Copyright &copy; Lost in the Abysm</p>
+        <p class="m-0 small">{{Copyright}} &copy; Lost in the Abysm</p>
       </div>
     </footer>
 
