@@ -9,7 +9,7 @@ indexAPP.controller('indexController', function ($scope) {
         $scope.gallery = "Galería";
         $scope.contact ="Contacto";
         $scope.social ="Redes Sociales";
-        $scope.buy="Compralo Ahora!";
+        $scope.buy="Descarga la demo!";
         
         $scope.available="Disponible pronto en Steam";
         $scope.information1="Que es Lost in the Abysm?";
@@ -31,6 +31,8 @@ indexAPP.controller('indexController', function ($scope) {
         $scope.trailer="Juego 3D rpg enfocado en el combate a distancia. Mira el trailer de juego!";
         $scope.worth ="Vale la pena jugarlo";
         $scope.About="Sobre";
+        $scope.nexus= "Nexo en el Abismo";
+        $scope.nexusInfo="El nexo es un lugar seguro para descansar"
     }
     else
     {
@@ -39,7 +41,7 @@ indexAPP.controller('indexController', function ($scope) {
         $scope.gallery="Gallery";
         $scope.contact="Contact";
         $scope.social="Social";
-        $scope.buy="Buy It Now!"
+        $scope.buy="Download the demo!"
         
         $scope.available="Available soon on Steam";
         $scope.information1="What is Lost in the Abysm?";
@@ -61,5 +63,8 @@ indexAPP.controller('indexController', function ($scope) {
         $scope.trailer ="3D rpg game focused on distance combat. Watch the gameplay trailer!";
         $scope.worth="WORTH PLAYING";
         $scope.About="About";
+        $scope.nexus= "Nexus in the Abysm";
+        $scope.nexusInfo="The nexus is a safe place to rest";
+        
     }
 });
